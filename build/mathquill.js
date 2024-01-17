@@ -22,9 +22,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+    var jQuery = require('jquery');
+
     var L = -1;
     var R = 1;
-    var jQuery = window.jQuery;
     var min = Math.min;
     var max = Math.max;
     if (!jQuery)
@@ -1459,11 +1460,9 @@ var __extends = (this && this.__extends) || (function () {
         return MQ;
     }
     MathQuill.noConflict = function () {
-        window.MathQuill = origMathQuill;
         return MathQuill;
     };
     var origMathQuill = window.MathQuill;
-    window.MathQuill = MathQuill;
     function RootBlockMixin(_) {
         _.moveOutOf = function (dir) {
             this.controller.handle('moveOutOf', dir);
