@@ -22,7 +22,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-(function () {
     var L = -1;
     var R = 1;
     var jQuery = window.jQuery;
@@ -7819,5 +7818,5 @@ var __extends = (this && this.__extends) || (function () {
             else
                 MathQuill[key] = val;
         }(key, MQ1[key]));
-}());
 
+module.exports = MathQuill;
